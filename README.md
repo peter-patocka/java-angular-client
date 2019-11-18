@@ -1,6 +1,7 @@
 # Angular 8 example application
 
-Firstly, we need to install dependendies for the node project:
+
+Firstly, because project is handled by NPM - Node package manager, we need to install dependencies for the node project:
 ```
 npm install
 ```

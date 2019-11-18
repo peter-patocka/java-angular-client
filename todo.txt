@@ -1,0 +1,16 @@
+- tutorial:
+  TypeScript - https://www.typescriptlang.org/docs/home.html
+  Your First App - https://angular.io/start
+  Tour of Heroes App and Tutorial - https://angular.io/tutorial
+  build an Angular 8 app from scratch https://www.freecodecamp.org/news/angular-8-tutorial-in-easy-steps/
+  HTML5 tags (functions and intent)
+  Finish Javascript https://javascript.info/
+
+- create social login
+  https://www.npmjs.com/package/angularx-social-login
+  https://www.youtube.com/watch?v=0OMsnbXNey0
+  https://www.youtube.com/watch?v=zzcX-kbvHHQ
+- deployment
+  - create bundle
+  - deploy to local server via Jenkins
+  - deploy to cloud
