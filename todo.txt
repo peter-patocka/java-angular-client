@@ -14,7 +14,12 @@
   - deploy on docker hub 
       https://medium.com/@DenysVuika/your-angular-apps-as-docker-containers-471f570a7f2
       https://github.com/DenysVuika/medium-angular-docker
-  - deploy on github
-  - create bundle
+  - deploy on github 
+    https://blog.angularindepth.com/the-angular-devops-series-ct-ci-with-travis-ci-and-github-pages-3c02664f078
   - deploy to local server via Jenkins
   - deploy to cloud
+  - add caching - static site generator
+    * Jekyll https://jekyllrb.com/
+    * https://github.com/eduardoboucas/staticman
+    * Varnish or Memcached
+    
