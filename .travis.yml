@@ -14,13 +14,13 @@ before_script:
 script:
   - npm run lint
   - npm run test-headless
-  - npm run e2e
+  # - npm run e2e
   - ng build --prod --base-href https://peter-patocka.github.io/java-angular-client/
 
 deploy:
-  provider: pages:git
+  provider: pages
   skip_cleanup: true
-  token: $GITHUB_TOKEN
+  github_token: $GITHUB_TOKEN
   local_dir: dist/java-angular-client
   on:
     branch: master
