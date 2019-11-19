@@ -1,8 +1,10 @@
+<app-heroes-navigation></app-heroes-navigation>
+
 <h2>My Heroes</h2>
 
 <div>
   <label>Hero name:
-    <input #heroName />
+    <input #heroName id="heroName" />
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
   <button (click)="add(heroName.value); heroName.value=''">
@@ -19,3 +21,5 @@
       (click)="delete(hero)">x</button>
   </li>
 </ul>
+
+<app-messages></app-messages>

@@ -7,6 +7,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { of } from 'rxjs';
 import { HEROES } from '../mock-heroes';
 import { HeroService } from '../hero.service';
+import { MessagesComponent } from '../messages/messages.component';
+import { NavigationComponent } from '../heroes/navigation/navigation.component';
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -20,7 +22,9 @@ describe('DashboardComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         DashboardComponent,
-        HeroSearchComponent
+        HeroSearchComponent,
+        MessagesComponent,
+        NavigationComponent
       ],
       imports: [
         RouterTestingModule.withRoutes([])
@@ -50,9 +54,5 @@ describe('DashboardComponent', () => {
   it('should call heroService', async(() => {
     expect(getHeroesSpy.calls.any()).toBe(true);
     }));
-
-  it('should display 4 links', async(() => {
-    expect(fixture.nativeElement.querySelectorAll('a').length).toEqual(4);
-  }));
 
 });

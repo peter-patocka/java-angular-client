@@ -18,6 +18,8 @@ import { TestComponent } from './test/test.component';
 import { TopComponent } from './top/top.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { NavigationComponent } from './heroes/navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports: [
@@ -43,7 +45,9 @@ import { RegisterComponent } from './auth/register/register.component';
     TestComponent,
     TopComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavigationComponent,
+    HomeComponent
   ],
   bootstrap: [ AppComponent ]
 })

@@ -1,18 +1,18 @@
 {
   "name": "java-angular-client",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "start": "ng serve",
+    "start": "ng serve --port 80",
     "test": "ng test",
     "build": "ng build --prod",
-    "e2e": "ng e2e",
+    "e2e": "ng e2e --port 0",
     "ng": "ng"
   },
   "keywords": [],
   "author": "Peter Patocka",
-  "repository": {},
+  "repository": "https://github.com/peter-patocka/java-angular-client",
   "license": "MIT",
   "dependencies": {
     "@angular/animations": "^8.0.0",

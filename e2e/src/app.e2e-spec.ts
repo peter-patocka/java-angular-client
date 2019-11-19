@@ -4,7 +4,6 @@ import { browser, element, by, ElementFinder, ElementArrayFinder } from 'protrac
 import { promise } from 'selenium-webdriver';
 
 const expectedH1 = 'Tour of Heroes';
-const expectedTitle = `${expectedH1}`;
 const targetHero = { id: 15, name: 'Magneta' };
 const targetHeroDashboardIndex = 3;
 const nameSuffix = 'X';
@@ -49,7 +48,7 @@ describe('Tutorial part 6', () => {
   beforeAll(() => browser.get(''));
 
   function getPageElts() {
-    let navElts = element.all(by.css('app-root nav a'));
+    let navElts = element.all(by.css('app-heroes-navigation nav a'));
 
     return {
       navElts: navElts,
@@ -72,9 +71,7 @@ describe('Tutorial part 6', () => {
 
   describe('Initial page', () => {
 
-    it(`has title '${expectedTitle}'`, () => {
-      expect(browser.getTitle()).toEqual(expectedTitle);
-    });
+    beforeAll(() => browser.get('/dashboard'));
 
     it(`has h1 '${expectedH1}'`, () => {
         expectHeading(1, expectedH1);
@@ -83,7 +80,7 @@ describe('Tutorial part 6', () => {
     const expectedViewNames = ['Dashboard', 'Heroes'];
     it(`has views ${expectedViewNames}`, () => {
       let viewNames = getPageElts().navElts.map((el: ElementFinder) => el.getText());
-      expect(viewNames).toEqual(expectedViewNames);
+      expect(viewNames).toEqual(jasmine.arrayContaining(expectedViewNames));
     });
 
     it('has dashboard as the active view', () => {
@@ -95,7 +92,7 @@ describe('Tutorial part 6', () => {
 
   describe('Dashboard tests', () => {
 
-    beforeAll(() => browser.get(''));
+    beforeAll(() => browser.get('/dashboard'));
 
     it('has top heroes', () => {
       let page = getPageElts();
@@ -130,7 +127,7 @@ describe('Tutorial part 6', () => {
 
   describe('Heroes tests', () => {
 
-    beforeAll(() => browser.get(''));
+    beforeAll(() => browser.get('/dashboard'));
 
     it('can switch to Heroes view', () => {
       getPageElts().appHeroesHref.click();
@@ -178,7 +175,8 @@ describe('Tutorial part 6', () => {
       const heroesBefore = await toHeroArray(getPageElts().allHeroes);
       const numHeroes = heroesBefore.length;
 
-      element(by.css('input')).sendKeys(newHeroName);
+      getPageElts().appHeroesHref.click();
+      element(by.id('heroName')).sendKeys(newHeroName);
       element(by.buttonText('add')).click();
 
       let page = getPageElts();
@@ -217,7 +215,7 @@ describe('Tutorial part 6', () => {
 
   describe('Progressive hero search', () => {
 
-    beforeAll(() => browser.get(''));
+    beforeAll(() => browser.get('/dashboard'));
 
     it(`searches for 'Ma'`, async () => {
       getPageElts().searchBox.sendKeys('Ma');
@@ -280,7 +278,7 @@ describe('Tutorial part 6', () => {
 });
 
 function addToHeroName(text: string): promise.Promise<void> {
-  let input = element(by.css('input'));
+  let input = element(by.id('heroName'));
   return input.sendKeys(text);
 }
 

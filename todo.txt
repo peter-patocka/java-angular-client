@@ -11,6 +11,10 @@
   https://www.youtube.com/watch?v=0OMsnbXNey0
   https://www.youtube.com/watch?v=zzcX-kbvHHQ
 - deployment
+  - deploy on docker hub 
+      https://medium.com/@DenysVuika/your-angular-apps-as-docker-containers-471f570a7f2
+      https://github.com/DenysVuika/medium-angular-docker
+  - deploy on github
   - create bundle
   - deploy to local server via Jenkins
   - deploy to cloud

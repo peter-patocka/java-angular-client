@@ -7,9 +7,10 @@ import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
 import { TestComponent } from './test/test.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'test', component: TestComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
