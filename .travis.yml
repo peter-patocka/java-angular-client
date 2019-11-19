@@ -12,5 +12,5 @@ before_script:
   - npm install -g @angular/cli
   
 script:
-  - ng lint
-  - ng build --prod --base-href https://peter-patocka.github.io/web/
+  - npm run lint
+  - ng build --prod --base-href https://peter-patocka.github.io/java-angular-client/
