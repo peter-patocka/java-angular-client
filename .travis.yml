@@ -10,7 +10,10 @@ branches:
 
 before_script:
   - npm install -g @angular/cli
+  - npm install -g angular-cli-ghpages
   
 script:
   - npm run lint
+  - npm run test-headless
   - ng build --prod --base-href https://peter-patocka.github.io/java-angular-client/
+  - ngh

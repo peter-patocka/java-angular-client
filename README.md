@@ -13,6 +13,14 @@ npm run start
 
 Our Angular application is ready on the following URL: `http://localhost`
 
+### How to check formatting with TSLint
+
+TSLint checks TypeScript code for readability, maintainability, and functionality errors.
+
+```
+npm run lint
+```
+
 ### How to run all unit tests
 
 Unit testing is focused on testing single units. All tests are isolated.
@@ -34,7 +42,7 @@ The test code itself is written using Jasmine - a testing library the provides a
 To run all tests in `e2e` folder, use script:
 
 ```
-npm run test
+npm run e2e
 ```
 
 ## Copyright and License

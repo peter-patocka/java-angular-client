@@ -6,6 +6,7 @@
     "lint": "tslint ./src/**/*.ts -t verbose",
     "start": "ng serve --port 80",
     "test": "ng test",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "build": "ng build --prod",
     "e2e": "ng e2e --port 0",
     "ng": "ng"
