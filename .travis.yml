@@ -20,7 +20,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: d00780f9b03f9c5fdb1eff54a8cf0f8ece70f325
   local_dir: dist/java-angular-client
   on:
     branch: master

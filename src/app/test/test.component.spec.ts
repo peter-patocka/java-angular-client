@@ -10,7 +10,7 @@ describe('TestComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ 
+      declarations: [
         TestComponent ,
         MessagesComponent,
         NavigationComponent
