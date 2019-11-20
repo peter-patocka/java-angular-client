@@ -7,20 +7,15 @@ sudo: required
 branches:
   only:
   - master
+  - gh-pages
 
 before_script:
   - npm install -g @angular/cli
+  - npm install -g angular-cli-ghpages
   
 script:
   - npm run lint
   - npm run test-headless
   # - npm run e2e
   - ng build --prod --base-href https://peter-patocka.github.io/java-angular-client/
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: d00780f9b03f9c5fdb1eff54a8cf0f8ece70f325
-  local_dir: dist/java-angular-client
-  on:
-    branch: master
+  - ngh
