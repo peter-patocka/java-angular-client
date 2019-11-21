@@ -13,7 +13,6 @@ addons:
 branches:
   only:
   - master
-  - gh-pages
 
 before_install:
   - LATEST_CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE"`
@@ -32,10 +31,10 @@ script:
 after_success:
   - npm run build
 
+before_deploy: "cd dist"
+
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist
-  on:
-    branch: master
+  provider: heroku
+  api_key:
+    secure: "db86707a-1997-4767-ac40-0a08cf93cbb4"
+  app: piixon-web
