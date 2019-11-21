@@ -31,8 +31,6 @@ script:
 after_success:
   - npm run build
 
-before_deploy: "cd dist && echo '{}' > composer.json && echo '<?php include_once(\"index.html\"); ?>' > index.php"
-
 deploy:
   provider: heroku
   api_key:
