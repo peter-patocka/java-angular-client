@@ -22,7 +22,6 @@ before_install:
 
 before_script:
   - npm install -g @angular/cli
-  - npm install -g angular-cli-ghpages
   - npm install
   
 script:
@@ -32,4 +31,11 @@ script:
 
 after_success:
   - npm run build
-  - ngh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master
