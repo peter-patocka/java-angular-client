@@ -1,4 +1,3 @@
-import { APP_BASE_HREF } from "@angular/common";
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -17,7 +16,6 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { MessagesComponent } from './messages/messages.component';
 import { TestComponent } from './test/test.component';
 import { TopComponent } from './top/top.component';
-import { environment } from '../environments/environment.prod';
 
 @NgModule({
   imports: [
