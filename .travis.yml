@@ -31,10 +31,10 @@ script:
 after_success:
   - npm run build
 
-before_deploy: "cd dist"
+before_deploy: "cd dist && echo '{}' > composer.json && echo '<?php include_once(\"index.html\"); ?>' > index.php"
 
 deploy:
   provider: heroku
   api_key:
-    secure: "db86707a-1997-4767-ac40-0a08cf93cbb4"
+    secure: $HEROKU_API_KEY
   app: piixon-web
