@@ -47,4 +47,4 @@ npm run e2e
 
 ## Copyright and License
 
-Copyright 2019 PiixON s.r.o. Code released under the [MIT](https://github.com/peter-patocka/java-angular-client/blob/master/LICENSE) license.
+Copyright 2019 PiixON s.r.o. Code released under the [MIT](https://github.com/peter-patocka/angular-web/blob/master/LICENSE) license.

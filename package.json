@@ -1,5 +1,5 @@
 {
-  "name": "java-angular-client",
+  "name": "angular-web",
   "version": "0.0.1",
   "private": false,
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "Peter Patocka",
-  "repository": "https://github.com/peter-patocka/java-angular-client",
+  "repository": "https://github.com/peter-patocka/angular-web",
   "license": "MIT",
   "dependencies": {
     "@angular/animations": "^8.0.0",
