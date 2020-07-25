@@ -15,7 +15,7 @@ branches:
   - master
 
 before_install:
-  - LATEST_CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_76"`
+  - LATEST_CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_84"`
   - curl "https://chromedriver.storage.googleapis.com/${LATEST_CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
   - unzip chromedriver_linux64.zip -d ~/bin
 
@@ -26,7 +26,7 @@ before_script:
 script:
   - npm run lint
   - npm run test-headless
-  - webdriver-manager update --versions.chrome 76.0.3809.126
+  - webdriver-manager update --versions.chrome 84.0.4147.30
   - npm run e2e
 
 after_success:
