@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10.16.0"
+  - "12.13.1"
 dist: trusty
 sudo: required
 
@@ -22,7 +22,7 @@ before_install:
 before_script:
   - npm install -g @angular/cli
   - npm install
-  
+
 script:
   - npm run lint
   - npm run test-headless
