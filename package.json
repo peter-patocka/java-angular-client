@@ -36,6 +36,7 @@
     "popper.js": "^1.16.0",
     "rxjs": "^6.5.1",
     "typescript": "~3.4.3",
+    "webdriver-manager": "^12.1.7",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
