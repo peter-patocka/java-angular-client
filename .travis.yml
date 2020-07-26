@@ -33,7 +33,5 @@ after_success:
 
 deploy:
   provider: heroku
-  api_key:
-    secure: $HEROKU_API_KEY_ENCRYPTED
+  api_key: $HEROKU_API_KEY_ENCRYPTED
   app: piixon-angular-web
-  on: master
