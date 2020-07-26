@@ -1,7 +1,7 @@
 # Angular 8 example application
 
 [![Build Status](https://travis-ci.org/peter-patocka/angular-web.svg?branch=master)](https://travis-ci.org/peter-patocka/angular-web) 
-[![Build Status](https://camo.githubusercontent.com/be46aee4f8d55e322c3e7db60ea23a4deb5427c9/68747470733a2f2f6865726f6b752d62616467652e6865726f6b756170702e636f6d2f3f6170703d6865726f6b752d6261646765)](https://piixon-angular-web.herokuapp.com/) 
+[![Deployment on Heroku](./heroku.jpg)](https://piixon-angular-web.herokuapp.com/) 
 
 
 Firstly, because project is handled by NPM - Node package manager, we need to install dependencies for the node project:
