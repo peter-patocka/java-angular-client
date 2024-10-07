@@ -11,7 +11,8 @@
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "prettier": "prettier --write \"src/**/*.{js,ts,html,scss,json}",
-    "e2e": "ng e2e"
+    "prettier-check": "prettier --check \"src/**/*.{js,ts,html,scss,json}",
+    "ci": "npm run prettier-check && npm run lint && npm run test-headless && npm run build"
   },
   "dependencies": {
     "@angular/animations": "^17.2.3",
@@ -59,7 +60,6 @@
     "karma-jasmine-html-reporter": "^2.1.0",
     "prettier": "^3.2.5",
     "prettier-eslint": "^16.3.0",
-    "protractor": "~7.0.0",
     "ts-node": "~10.9.2",
     "typescript": "5.2.2"
   }

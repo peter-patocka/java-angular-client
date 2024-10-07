@@ -55,11 +55,10 @@ export class InMemoryDataService implements InMemoryDbService {
 			{
 				id: 7,
 				name: 'header',
-				tagline: 'A FREE AND SIMPLE LANDING PAGE',
-				title:
-					'Namari is free landing page template you can use for your projects. It is free to use for your personal and commercial projects, enjoy!',
-				buttontext: 'START CREATING TODAY',
-				buttonlink: '/home',
+				tagline: 'TURN YOUR PIIXELS ON!',
+				title: 'PiixON s.r.o. is a software development company specializing in the design, implementation, and maintenance of a diverse range of technology stacks. Our expertise spans web and mobile applications, microservice architectures, cloud services, and, of course, cutting-edge artificial intelligence.',
+				buttontext: 'READ MORE ABOUT US',
+				buttonlink: '/about',
 				image: 'banner-image-1.jpg',
 			},
 		];
